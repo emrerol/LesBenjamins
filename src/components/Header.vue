@@ -1,7 +1,7 @@
 <template>
   <!-- <div class="container"> -->
   <div class="tutorial">
-    <ul class="row" style="margin-right:10px;">
+    <ul class="row" style="margin-right: 10px">
       <div class="col-sm-4">
         <li class="dropdown">
           <button class="dropbtn">İndirim</button>
@@ -23,7 +23,7 @@
           </div>
         </li>
         <li>
-          Erkek
+          <b-link id="erblink" :to="{ path: 'erkek' }">Erkek</b-link>
           <i class="fa fa-angle-down"></i>
           <ul>
             <div class="row">
@@ -97,7 +97,7 @@
           </ul>
         </li>
         <li>
-          Kadın
+          <b-link id="kadınblink" :to="{ path: 'kadın' }">Kadın</b-link>
           <i class="fa fa-angle-down"></i>
           <ul>
             <div class="row">
@@ -173,9 +173,15 @@
             </div>
           </ul>
         </li>
-        <li>Çocuk</li>
+        <li><b-link id="cocukblink" :to="{ path: 'cocuk' }">Çocuk</b-link></li>
         <li class="dropdown">
-          <button class="dropbtn">Koleksiyonlar</button>
+          <button class="dropbtn">
+            <li>
+              <b-link id="koleksiyonblink" :to="{ path: 'koleksiyon' }"
+                >Koleksiyonlar</b-link
+              >
+            </li>
+          </button>
           <div class="dropdown-content">
             <a href="#">Halloween</a>
             <a href="#">Forgotten Pacenotes</a>
@@ -184,9 +190,11 @@
           </div>
         </li>
       </div>
-      
-      <h2 id="lesbenId" class="col-sm-4"><a href="" style="color:black; text-decoration: none;">LES BENJAMINS</a></h2>
-      <div class="col-sm-4" style="padding:0px;">
+
+      <h2 id="lesbenId" class="col-sm-4">
+        <a href="" style="color: black; text-decoration: none">LES BENJAMINS</a>
+      </h2>
+      <div class="col-sm-4" style="padding: 0px">
         <li class="dropdown">
           <button class="dropbtn">Markalar</button>
           <div class="dropdown-content">
@@ -235,9 +243,8 @@
           <b-icon icon="bag" aria-hidden="true"></b-icon>
         </b-button>
         <b-button v-on="click">
-            <sepetiniz/>
+          <sepetiniz />
         </b-button>
-        
       </div>
     </ul>
     <div class="slider"></div>
@@ -249,13 +256,13 @@
 </template>
 
 <script>
-import Sepetiniz from './Sepetiniz.vue';
+import Sepetiniz from "./Sepetiniz.vue";
 export default {
-  components: { Sepetiniz },};
+  components: { Sepetiniz },
+};
 </script>
 
 <style>
-
 li div a:hover {
   text-decoration: none;
   color: gray;
@@ -390,7 +397,9 @@ html {
   /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
   z-index: 1;
 }
-
+#erblink {
+  color: black;
+}
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -417,7 +426,17 @@ html {
 #lesbenId {
   padding-top: 1.5%;
   padding-left: 8%;
-} 
+}
+#kadınblink {
+  color: black;
+}
+#cocukblink {
+  color: black;
+}
+#koleksiyonblink {
+  color: black;
+}
+
 #bayraklarID {
   margin-left: 10%;
 }
@@ -426,3 +445,6 @@ html {
   width: 25px;
 }
 </style>
+
+
+

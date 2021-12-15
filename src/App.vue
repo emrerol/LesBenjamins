@@ -1,32 +1,40 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+  <div id="maindiv">
+    <Header id="header"></Header>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+    <Footer></Footer>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+#maindiv {
+  font-family: Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji;
 }
-
-#nav {
-  padding: 30px;
+#header {
+  z-index: 1;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 </style>
+
+<script>
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+export default {
+  data: () => ({}),
+  name: "app",
+  components: {
+    Footer,
+    Header,
+  },
+};
+</script>

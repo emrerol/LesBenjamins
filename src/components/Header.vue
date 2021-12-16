@@ -236,9 +236,9 @@
         <b-button>
           <b-icon icon="search" aria-hidden="true" font-scale="1"></b-icon>
         </b-button>
-        <b-link :to="{path:'login'}">
-          <a><img src="../assets/customer.png"></a>
-        </b-link>
+        <b-button class="btn" v-b-toggle.sidebar-right background-color="white">
+          <b-icon icon="person" aria-hidden="true"></b-icon>
+        </b-button>
         <b-button class="btn" v-b-toggle.sidebar-right background-color="white">
           <b-icon icon="bag" aria-hidden="true"></b-icon>
         </b-button>

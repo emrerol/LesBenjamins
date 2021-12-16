@@ -1,7 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Erkek from "../views/Erkek.vue";
+import Markalar from "../views/Markalar.vue"
+
+
+
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+// import { component } from "vue/types/umd";
+
 
 Vue.use(VueRouter);
 Vue.use(BootstrapVue);
@@ -13,6 +20,11 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+     path:"/erkek",
+     name: "Erkek",
+     component: Erkek
   },
   {
     path: "/kadın",
@@ -30,12 +42,15 @@ const routes = [
     component: () => import('@/views/Koleksiyon.vue'),
   },
   {
-    path: "/about",
-    name: "About",
-
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    path:"/markalar",
+    name:"Markalar",
+    component : Markalar
   },
+
+
+  
+
+
 ];
 
 const router = new VueRouter({

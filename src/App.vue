@@ -1,15 +1,15 @@
 <template>
-  <div id="maindiv">
-    <Header id="header"></Header>
-    <v-content>
-      <router-view></router-view>
-    </v-content>
-    <Footer></Footer>
+  <div id="app">
+    <Header/>
+    <Discount/>
+    <TopPic/>
+    <MainGrid/>
+    <Footer/>
   </div>
 </template>
 
 <style>
-#maindiv {
+ /* #maindiv {
   font-family: Segoe UI, Helvetica Neue, Arial, Noto Sans, sans-serif,
     Apple Color Emoji;
 }
@@ -22,19 +22,27 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-}
-</style>
+}  */
+</style> 
 
 <script>
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+ import Header from "./components/Header";
+ import Footer from "./components/Footer";
+ import MainGrid from "./components/MainPageGrid.vue"
+ import Discount from "./components/DiscountShow.vue"
+ import TopPic from "./components/TopPic.vue"
+
 
 export default {
   data: () => ({}),
   name: "app",
   components: {
-    Footer,
-    Header,
+   Header,
+   Discount,
+   TopPic,
+   MainGrid,
+   Footer
+
   },
 };
 </script>

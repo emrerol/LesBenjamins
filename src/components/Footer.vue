@@ -8,33 +8,32 @@
         </mdb-col>
         <mdb-col md="2" lg="2" xl="2" class="mb-5">
           <h6>Marka</h6>
-          <p><a href="#" style="color: black">Hakkımızda</a></p>
-          <p><a href="#!" style="color: black">İrtibat</a></p>
-          <p><a href="#!" style="color: black">Mağazalarımız</a></p>
+          <p><a href="#" style="color: black; text-decoration: none;">Hakkımızda</a></p>
+          <p><a href="#!" style="color: black; text-decoration: none;">İrtibat</a></p>
+          <p><a href="#!" style="color: black; text-decoration: none;">Mağazalarımız</a></p>
         </mdb-col>
         <mdb-col md="3" lg="2" xl="2" class="mb-5">
           <h6>Keşfet</h6>
-          <p><a href="#!" style="color: black">Giyim Beden Tablosu</a></p>
-          <p><a href="#!" style="color: black">Sneakers Beden Tablosu</a></p>
+          <p><a href="#!" style="color: black; text-decoration: none;">Giyim Beden Tablosu</a></p>
+          <p><a href="#!" style="color: black; text-decoration: none;">Sneakers Beden Tablosu</a></p>
         </mdb-col>
         <mdb-col md="4" lg="3" xl="3" class="mb-5">
           <h6>Müşteri Hizmetleri</h6>
-          <p><a href="#!" style="color: black">Aydınlatma Metni</a></p>
-          <p><a href="#!" style="color: black">Çerez & Gizlilik</a></p>
+          <p><a href="#!" style="color: black; text-decoration: none;">Aydınlatma Metni</a></p>
+          <p><a href="#!" style="color: black; text-decoration: none;">Çerez & Gizlilik</a></p>
           <p>
-            <a href="#!" style="color: black">Kargo / Degisim Iade Sureci</a>
+            <a href="#!" style="color: black; text-decoration: none;">Kargo / Degisim Iade Sureci</a>
           </p>
-          <p><a href="#!" style="color: black">Mesafeli Satis Sozlesmesi</a></p>
-          <p><a href="#!" style="color: black">On Bilgilendirme Formu</a></p>
-          <p><a href="#!" style="color: black">Cayma Formu</a></p>
-          <p><a href="#!" style="color: black">Uyelik Sozleşmesi</a></p>
+          <p><a href="#!" style="color: black; text-decoration: none;">Mesafeli Satis Sozlesmesi</a></p>
+          <p><a href="#!" style="color: black; text-decoration: none;">On Bilgilendirme Formu</a></p>
+          <p><a href="#!" style="color: black; text-decoration: none;">Cayma Formu</a></p>
+          <p><a href="#!" style="color: black; text-decoration: none;">Uyelik Sozleşmesi</a></p>
         </mdb-col>
-        <div>
+        <mdb-col>
           <button id="newsletter">
             Newsletter<img id="rig-ar" src="../assets/right-arrows.png" />
           </button>
-          <br />
-          <div class="row" id="socials">
+          <div class="col" id="socials">
             <b-button
               href="https://www.instagram.com/lesbenjamins/?hl=en"
               target="_blank"
@@ -54,7 +53,7 @@
               ><img src="../assets/youtube.png"
             /></b-button>
           </div>
-        </div>
+        </mdb-col>
       </mdb-row>
     </mdb-container>
     <div class="bottomleft">
@@ -99,4 +98,6 @@ export default {
 #rig-ar {
   padding-left: 80px;
 }
+
+
 </style>

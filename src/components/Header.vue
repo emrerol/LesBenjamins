@@ -23,7 +23,7 @@
           </div>
         </li>
         <li>
-          <b-link id="erblink" :to="{ path: 'erkek' }">Erkek</b-link>
+          <b-link id="erblink" :to="{ path: '/erkek' }">Erkek</b-link>
           <i class="fa fa-angle-down"></i>
           <ul>
             <div class="row">
@@ -196,7 +196,7 @@
       </h2>
       <div class="col-sm-4" style="padding: 0px">
         <li class="dropdown">
-          <button class="dropbtn">Markalar</button>
+          <b-link id="markablink" :to="{ path: 'markalar' }">Markalar</b-link>
           <div class="dropdown-content">
             <a href="#">JW Anderson</a>
             <a href="#">Martine Rose</a>
@@ -207,7 +207,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <button class="dropbtn">Ayakkabı</button>
+          <b-link id="ayakkabıblink" :to="{ path: 'ayakkabılar' }">Ayakkabılar</b-link>
           <div class="dropdown-content">
             <a href>RAFFLE - Yeezy Foam Runner</a>
             <a href>İndirim</a>
@@ -236,12 +236,13 @@
         <b-button>
           <b-icon icon="search" aria-hidden="true" font-scale="1"></b-icon>
         </b-button>
-        <b-button>
-          <b-icon icon="person" aria-hidden="true" font-scale="2"></b-icon>
-        </b-button>
+        <b-link :to="{path:'login'}">
+          <a><img src="../assets/customer.png"></a>
+        </b-link>
         <b-button class="btn" v-b-toggle.sidebar-right background-color="white">
           <b-icon icon="bag" aria-hidden="true"></b-icon>
         </b-button>
+        <b-icon icon="" aria-hidden="true" font-scale="2" ></b-icon>
         <b-button v-on="click">
           <sepetiniz />
         </b-button>
@@ -444,6 +445,58 @@ html {
   margin-left: 2%;
   width: 25px;
 }
+
+#markablink{
+  color: black;
+  text-decoration: none;
+}
+
+#markablink:hover {
+  color: rgb(202, 197, 197);
+}
+#ayakkabıblink{
+  color: black;
+  text-decoration: none;
+}
+
+#ayakkabıblink:hover{
+  color: rgb(202, 197, 197);
+}
+
+#erblink{
+  color: black;
+  text-decoration: none;
+}
+
+#erblink:hover{
+  color: rgb(202, 197, 197);
+}
+
+#kadınblink{
+  color: black;
+  text-decoration: none;
+}
+#kadınblink:hover {
+  color: rgb(202, 197, 197);
+}
+
+#koleksiyonblink{
+  color: black;
+  text-decoration: none;
+}
+#koleksiyonblink:hover{
+  color: rgb(202, 197, 197);
+}
+
+#cocukblink {
+  color: black;
+  text-decoration: none;
+}
+
+#cocukblink:hover {
+  color: rgb(202, 197, 197);
+}
+
 </style>
 
 

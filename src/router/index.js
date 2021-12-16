@@ -3,11 +3,6 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Erkek from "../views/Erkek.vue";
 import Markalar from "../views/Markalar.vue"
-import Kadın from "../views/Kadın.vue";
-import LoginPage from "../views/LoginPage.vue";
-import Koleksiyon from "../views/Koleksiyon.vue";
-import Cocuk from "../views/Cocuk.vue";
-
 
 
 
@@ -34,27 +29,22 @@ const routes = [
   {
     path: "/kadın",
     name: "Kadın",
-    component: Kadın,
+    component: () => import('@/views/Kadın.vue'),
   },
   {
     path: "/cocuk",
     name: "Cocuk",
-    component: Cocuk,
+    component: () => import('@/views/Cocuk.vue'),
   },
   {
     path: "/koleksiyon",
     name: "Koleksiyon",
-    component: Koleksiyon,
+    component: () => import('@/views/Koleksiyon.vue'),
   },
   {
     path:"/markalar",
     name:"Markalar",
     component : Markalar
-  },
-  {
-    path:"/login",
-    name:"Login",
-    component : LoginPage
   },
 
 

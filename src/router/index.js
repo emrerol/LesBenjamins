@@ -15,22 +15,21 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 
 
-const routes = [
+export const routes = [
   {
     path: "/",
     name: "Home",
     component: Home,
   },
+  // {
+  //   path :"/erkek", component:Erkek
+  // },
   {
      path:"/erkek",
      name: "Erkek",
-     component: Erkek
+     component: () => import('@/views/Erkek.vue')
   },
-  {
-    path: "/kadın",
-    name: "Kadın",
-    component: () => import('@/views/Kadın.vue'),
-  },
+  
   {
     path: "/cocuk",
     name: "Cocuk",
@@ -56,7 +55,7 @@ const routes = [
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes,
+  routes 
 });
 
 export default router;

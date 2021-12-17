@@ -23,7 +23,7 @@
           </div>
         </li>
         <li>
-          <b-link id="erblink" :to="{ path: '/erkek' }">Erkek</b-link>
+          <b-link id="erblink" :to="{ path: 'erkek' }" >Erkek</b-link>
           <i class="fa fa-angle-down"></i>
           <ul>
             <div class="row">

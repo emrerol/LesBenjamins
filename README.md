@@ -1,4 +1,4 @@
-# test3
+### Component Geliştirmek ve VueJs temellerini görmek için yaptığım, yarım kalmış bir clone projesi
 
 ## Project setup
 ```
